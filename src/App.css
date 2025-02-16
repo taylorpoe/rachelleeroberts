@@ -116,6 +116,7 @@ h1 {
   cursor: pointer;
   text-decoration: none;
   transition: background-color 0.3s ease;
+  margin-top: 30px;
 }
 
 .email-button:hover {
