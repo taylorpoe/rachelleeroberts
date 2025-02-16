@@ -1,35 +1,80 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { MdEmail } from "react-icons/md";
+import { Icon } from "@iconify/react";
+import "./App.css";
+import heroImage from "./assets/heroimage.JPG";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
+      <div className="hero-container">
+        <div className="hero-left">
+          <img
+            src={heroImage}
+            alt="Rachel Lee Roberts"
+            className="hero-image"
+          />
+        </div>
+        <div className="hero-right">
+          <h1>Rachel Lee Roberts</h1>
+          <p className="hero-description">
+            A country pop artist from Northern California based in Nashville
+            Tennessee.
+          </p>
+          <a
+            href="https://forms.gle/TFfhAT6WZfNY2mdXA"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="email-button"
+          >
+            <MdEmail className="email-icon" />
+            Join Email List
+          </a>
+        </div>
+      </div>
+      <div className="social-container">
+        <a
+          href="https://open.spotify.com/album/6bT3RFwklkfLgghmDLGkle?si=0UYeBFAMQoC7JbrNYFxHjQ"
+          className="social-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Icon icon="mdi:spotify" className="social-icon" />
         </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
+        <a
+          href="https://music.apple.com/us/album/aimed-at-me-single/1521104056"
+          className="social-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Icon icon="mdi:apple" className="social-icon" />
+        </a>
+        <a
+          href="https://www.tiktok.com/@rachelleerobertsmusic?lang=en"
+          className="social-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Icon icon="simple-icons:tiktok" className="social-icon" />
+        </a>
+        <a
+          href="https://www.instagram.com/rachelleerobertsmusic/"
+          className="social-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Icon icon="mdi:instagram" className="social-icon" />
+        </a>
+        <a
+          href="https://www.youtube.com/watch?v=kcOuWOl-kJ4"
+          className="social-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Icon icon="mdi:youtube" className="social-icon" />
         </a>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
