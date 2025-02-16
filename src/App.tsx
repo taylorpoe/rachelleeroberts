@@ -2,6 +2,7 @@ import { MdEmail } from "react-icons/md";
 import { Icon } from "@iconify/react";
 import "./App.css";
 import heroImage from "./assets/heroimage.JPG";
+import Gallery from "./components/Gallery";
 
 function App() {
   return (
@@ -33,7 +34,7 @@ function App() {
       </div>
       <div className="social-container">
         <a
-          href="https://open.spotify.com/album/6bT3RFwklkfLgghmDLGkle?si=0UYeBFAMQoC7JbrNYFxHjQ"
+          href="https://open.spotify.com/artist/4IkIQH1H6uomyGgjpABSaz?si=q-DV5JYtRuShLUzvF6kSpQ"
           className="social-link"
           target="_blank"
           rel="noopener noreferrer"
@@ -41,7 +42,7 @@ function App() {
           <Icon icon="mdi:spotify" className="social-icon" />
         </a>
         <a
-          href="https://music.apple.com/us/album/aimed-at-me-single/1521104056"
+          href="https://music.apple.com/us/artist/rachel-lee-roberts/1521097085"
           className="social-link"
           target="_blank"
           rel="noopener noreferrer"
@@ -49,7 +50,7 @@ function App() {
           <Icon icon="mdi:apple" className="social-icon" />
         </a>
         <a
-          href="https://www.tiktok.com/@rachelleerobertsmusic?lang=en"
+          href="https://www.tiktok.com/@rachelleerobertsmusic"
           className="social-link"
           target="_blank"
           rel="noopener noreferrer"
@@ -65,7 +66,7 @@ function App() {
           <Icon icon="mdi:instagram" className="social-icon" />
         </a>
         <a
-          href="https://www.youtube.com/watch?v=kcOuWOl-kJ4"
+          href="https://www.youtube.com/channel/UCLZCJfEGxNvzSkdfL97nEgw"
           className="social-link"
           target="_blank"
           rel="noopener noreferrer"
@@ -73,6 +74,7 @@ function App() {
           <Icon icon="mdi:youtube" className="social-icon" />
         </a>
       </div>
+      <Gallery />
     </>
   );
 }
