@@ -162,6 +162,8 @@ h1 {
 @media screen and (max-width: 768px) {
   .hero-container {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .hero-left,
@@ -169,6 +171,9 @@ h1 {
     flex: none;
     height: 50%;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .hero-right {
@@ -187,12 +192,22 @@ h1 {
   }
 
   .social-container {
-    gap: 3.5rem;
-    padding: 0 1rem;
+    gap: 2.5rem;
+    padding: 0 2rem;
+    min-height: 15vh;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .social-icon {
     font-size: 2rem;
+    display: block;
   }
 
   .email-button {
@@ -307,18 +322,31 @@ h1 {
 
 @media screen and (max-width: 768px) {
   .lightbox-nav {
-    width: 40px;
-    height: 40px;
-    min-width: 40px;
-    min-height: 40px;
-    font-size: 24px;
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    min-height: 60px;
+    font-size: 36px;
+    background: white;
+    color: black;
+    top: auto;
+    bottom: 20px;
+    transform: none;
+  }
+
+  .lightbox-nav:hover {
+    background: rgba(255, 255, 255, 0.8);
   }
 
   .lightbox-nav.prev {
-    left: 10px;
+    left: 30%;
   }
 
   .lightbox-nav.next {
-    right: 10px;
+    right: 30%;
+  }
+
+  .lightbox-content {
+    padding-bottom: 100px;
   }
 }
