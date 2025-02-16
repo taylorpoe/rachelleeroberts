@@ -8,7 +8,7 @@ const Gallery = () => {
   useEffect(() => {
     // Import all images from the gallery folder
     const importImages = async () => {
-      const imageContext = import.meta.glob(
+      const imageContext = import.meta.glob<{ default: string }>(
         "/src/assets/gallery/*.{jpg,JPG,jpeg,JPEG,png,PNG}"
       );
       const imageUrls = await Promise.all(
